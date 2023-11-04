@@ -23,7 +23,7 @@ const Form = ({ type, feed, setFeed, submitting, handleSubmit }) => {
               </span>
 
               <textarea
-                value={feed.prompt}
+                value={feed.feed}
                 onChange={(e) => setFeed({ ...feed, feed: e.target.value})}
                 placeholder='Curate your Feed here...'
                 required
@@ -34,7 +34,7 @@ const Form = ({ type, feed, setFeed, submitting, handleSubmit }) => {
               <span className='font-satoshi font-semibold text-base text-gray-700'>
                 Tag {` `}
                 <span className='font-normal'>
-                  (#product, #webdevelopment, #idea)
+                  (ex: entrepreneurship)
                 </span>
               </span>
 

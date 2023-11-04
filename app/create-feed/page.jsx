@@ -32,8 +32,6 @@ const CreateFeed = () => {
 
       if (response.ok) {
         router.push('/');
-      } else {
-        throw new Error(await response.text());
       }
     } catch (error) {
       console.log(error);
