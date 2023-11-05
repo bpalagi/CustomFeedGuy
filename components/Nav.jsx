@@ -29,7 +29,7 @@ const Nav = () => {
                     height={30}
                     className='object-contain'
                 />
-                <p className='logo_text'>CustomFeeds</p>
+                <p className='logo_text'>CustomFeedGuy</p>
             </Link>
 
             { /* Desktop Naviagtion */}
