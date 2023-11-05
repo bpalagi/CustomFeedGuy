@@ -4,9 +4,9 @@ const nextConfig = {
     experimental: {
         serverComponentsExternalPackages: ["mongoose"],
     },
-    images: {
-        domains: ['lh3.googleusercontent.com'],
-    },
+    // images: {
+    //     domains: ['lh3.googleusercontent.com'],
+    // },
     webpack(config) {
         config.experiments = {
             ...config.experiments,
