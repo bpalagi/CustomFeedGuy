@@ -1,6 +1,5 @@
 import { connectToDB } from "@utils/database";
 import Feed from "@models/feed";
-import PromptCard from "@components/PromptCard";
 
 export const GET = async (request, { params }) => {
   try {
