@@ -15,6 +15,11 @@ const Nav = () => {
                 />
                 <p className='logo_text'>CustomFeedGuy</p>
             </Link>
+            <div className='flex gap-3 md:gap-5'>
+                        <Link href="/past-newsletters" className='black_btn'>
+                            Past Newsletters
+                        </Link>
+            </div>
         </nav>
     )
 }

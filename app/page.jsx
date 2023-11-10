@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 
-import Feed from "@components/Feed";
 import NewsletterForm from "@components/NewsletterForm";
 
 const Home = () => {
