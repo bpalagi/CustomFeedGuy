@@ -56,7 +56,7 @@ const Home = () => {
         submitting={submitting}
       />
 
-      <Feed />
+      {/* <Feed /> */}
     </section>
   )
 }

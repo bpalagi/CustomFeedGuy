@@ -1,23 +1,7 @@
-"use client";
-
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
-import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
 
 const Nav = () => {
-
-    const { data: session } = useSession();
-    const [providers, setProviders] = useState(null);
-    const [toggleDropdown, setToggleDropdown] = useState(false)
-
-    useEffect(() => {
-        const setUpProviders = async () => {
-            const response = await getProviders();
-            setProviders(response);
-        }
-        setUpProviders();
-    }, [])
 
     return (
         <nav className='flex-between w-full mb-16 pt-3'>
@@ -31,8 +15,40 @@ const Nav = () => {
                 />
                 <p className='logo_text'>CustomFeedGuy</p>
             </Link>
+        </nav>
+    )
+}
 
-            { /* Desktop Naviagtion */}
+export default Nav;
+
+/*
+Removed login for the time being. Restructuring the website for my own purposes as a blog.
+
+
+'use client';
+import { useState, useEffect } from 'react';
+import { signIn, signOut, useSession, getProviders } from 'next-auth/react';
+
+
+Above return:
+    const { data: session } = useSession();
+    const [providers, setProviders] = useState(null);
+    const [toggleDropdown, setToggleDropdown] = useState(false)
+
+    useEffect(() => {
+        const setUpProviders = async () => {
+            const response = await getProviders();
+            setProviders(response);
+        }
+        setUpProviders();
+    }, [])
+
+
+
+In the return block:
+
+
+            { /* Desktop Naviagtion }
             <div className='sm:flex hidden'>
                 {session?.user ? (
                     <div className='flex gap-3 md:gap-5'>
@@ -70,7 +86,7 @@ const Nav = () => {
                 )}
             </div>
 
-            { /* Mobile Navigation */}
+            { /* Mobile Navigation }
             <div className='sm:hidden flex relative'>
                 {session?.user ? (
                     <div className='flex'>
@@ -121,8 +137,4 @@ const Nav = () => {
                     </>
                 )}
             </div>
-        </nav>
-    )
-}
-
-export default Nav;
+*/
