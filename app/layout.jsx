@@ -5,7 +5,10 @@ import Provider from '@components/Provider';
 
 export const metadata = {
     title: 'CustomFeedGuy',
-    description: 'Control your own Algorithm.'
+    description: 'Control your own Algorithm.',
+    icons: {
+        icon: '/icon.png',
+    } 
 }
 
 const RootLayout = ({ children }) => {
