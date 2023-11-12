@@ -25,6 +25,7 @@ const Home = () => {
 
       if (response.ok) {
         // Change this to send user to the "please verify" page
+        setEmailInput("");
       } else {
         // send some sort of alert for if we get it in mongo and not convertkit - manually add them?
         throw new Error(`Bad Response: ${text}`);
