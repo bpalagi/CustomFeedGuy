@@ -43,10 +43,10 @@ const Home = () => {
       <h1 className="head_text text-center">
         Customize Your Feed
         <br className="max-md:hidden" />
-        <span className="orange_gradient text-center"> Maximize Your Time </span>
+        <span className="blue_gradient text-center"> Maximize Your Time </span>
       </h1>
       <p className="desc text-center">
-        Join my journey below.
+        Building Community Around Valuable Online Content
       </p>
 
       <NewsletterForm
